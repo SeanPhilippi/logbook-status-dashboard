@@ -1,27 +1,9 @@
-export default () => {
+export default (data) => {
     return {
-        // chart: {
-        //   type: 'column',
-        //   height: 'inherit',
-        //   zoomType: 'x',
-        //   resetZoomButton: {
-        //     theme: {
-        //       fill: 'white',
-        //       stroke: 'black',
-        //       r: 4,
-        //       states: {
-        //         hover: {
-        //           fill: 'black',
-        //           style: {
-        //             color: 'white',
-        //           },
-        //         },
-        //       },
-        //     },
-        //   },
-        //   panning: true,
-        //   panKey: 'shift',
-        // },
+        chart: {
+            type: 'column',
+            height: 'inherit',
+        },
         navigation: {
             buttonOptions: {
                 symbolStroke: 'black',
@@ -35,7 +17,7 @@ export default () => {
         //   text: '',
         // },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges'],
+            categories: ['Received', 'Assigned', 'Examine', 'Posted', 'Waiting'],
         },
         legend: {
             layout: 'vertical',
@@ -68,7 +50,7 @@ export default () => {
                 shadow: false,
             },
         },
-        // series: data.series,
+        series: data.series,
         responsive: {
             rules: [
                 {
