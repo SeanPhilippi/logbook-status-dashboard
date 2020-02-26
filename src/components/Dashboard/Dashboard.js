@@ -8,11 +8,11 @@ import './Dashboard.css';
 Highcharts.setOptions(dashboardChartTheme);
 
 const Dashboard = () => {
-  return (
-    <div className='border'>
-      <HighchartsReact highcharts={Highcharts} options={dashboardChartConfig()} />
-    </div>
-  );
+    return (
+        <div className='border'>
+            <HighchartsReact highcharts={Highcharts} options={dashboardChartConfig()} />
+        </div>
+    );
 };
 
 export default Dashboard;
