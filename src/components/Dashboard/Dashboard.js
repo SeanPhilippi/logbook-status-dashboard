@@ -11,7 +11,10 @@ Highcharts.setOptions(dashboardChartTheme);
 const Dashboard = () => {
     return (
         <div className='border'>
-            <HighchartsReact highcharts={Highcharts} options={dashboardChartConfig(data)} />
+            <HighchartsReact
+                highcharts={Highcharts}
+                options={dashboardChartConfig(data)}
+            />
         </div>
     );
 };

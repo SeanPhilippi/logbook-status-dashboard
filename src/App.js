@@ -7,8 +7,8 @@ import './App.css';
 const App = () => {
     return (
         <div className='App'>
-            <Container>
-                <Settings />
+            <Container className='mt-5'>
+                <Settings/>
                 <Dashboard />
             </Container>
         </div>

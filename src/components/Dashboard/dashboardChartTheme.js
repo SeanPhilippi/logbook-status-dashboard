@@ -132,7 +132,7 @@ export default {
     },
     credits: {
         style: {
-            color: '#666',
+            display: 'none'
         },
     },
     labels: {
