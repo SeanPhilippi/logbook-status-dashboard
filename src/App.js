@@ -1,10 +1,13 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import Dashboard from './components/Dashboard/Dashboard';
+import Settings from './components/Settings/Settings';
+import './App.css';
 
 const App = () => {
   return (
-    <div className="App d-flex align-items-center">
-        my app
+    <div className='App'>
+      <Settings />
+      <Dashboard />
     </div>
   );
 };
