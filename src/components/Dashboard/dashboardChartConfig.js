@@ -1,4 +1,4 @@
-export default (data) => {
+export default (data, showModal) => {
     return {
         chart: {
             type: 'column',
@@ -51,6 +51,16 @@ export default (data) => {
             valueSuffix: ' tickets',
         },
         plotOptions: {
+            series: {
+                cursor: 'pointer',
+                events: {
+                    click: function (event) {
+                        showModal();
+                        console.log('bar chart click event', event);
+                        console.log('this', this);
+                    }
+                }
+            },
             column: {
                 pointPadding: 0,
                 borderWidth: 0,
